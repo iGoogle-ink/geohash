@@ -89,10 +89,8 @@ func Encode(lat, lng float64, precision int) (geohash string) {
 			bit++
 		} else {
 			bitNum := strings.Join(tempBits, "")
-			//fmt.Println("tempBits:", tempBits)
 			num := goutil.BinaryToDecimal(bitNum)
-			//fmt.Println("num:", num)
-			//fmt.Println("==> ", Base32[num])
+			//fmt.Printf("%v => %v => %v\n", tempBits, num, Base32[num])
 			buffer.WriteString(Base32[num])
 			preLen++
 			//重置数据
