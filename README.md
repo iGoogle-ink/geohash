@@ -17,7 +17,7 @@ $ go get -u github.com/iGoogle-ink/geohash
 //    lat：纬度
 //    lng：纬度
 //    precision：精度值
-geohash := geohash.Encode(39.928167, 116.389550, 8)
+geohash := geohash.Encode(39.928167, 116.389550, 6)
 fmt.Println(geohash)
 ```
 
