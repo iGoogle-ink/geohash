@@ -51,3 +51,7 @@ geohash基本原理是将地球理解为一个二维平面，将平面递归分�
 [1 1 0 0 0] => 24 => s
 
 - 最后得到结果：wx4g0s
+
+### geohash长度和精度对照表
+
+<img src="https://raw.githubusercontent.com/iGoogle-ink/geohash/master/table.jpg"/>
