@@ -12,6 +12,6 @@ import (
 
 func TestEncode(t *testing.T) {
 
-	geohash := Encode(31.2791193622, 121.5543168783, 8)
+	geohash := Encode(31.2851847116, 121.5571761131, 10)
 	fmt.Println(geohash)
 }

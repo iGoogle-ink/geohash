@@ -45,7 +45,7 @@ func (this *Box) Height() (height float64) {
 //    lat:纬度
 //    lng:经度
 //    precision:精度值
-func Encode(lat, lng float64, precision int) (geohash string) {
+func Encode(lat, lng float64, precision int) (geohashCode string) {
 	var (
 		buffer            = new(bytes.Buffer)
 		Base32            = [32]string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "b", "c", "d", "e", "f", "g", "h", "j", "k", "m", "n", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
@@ -98,6 +98,6 @@ func Encode(lat, lng float64, precision int) (geohash string) {
 			tempBits = make([]string, 0)
 		}
 	}
-	geohash = buffer.String()
+	geohashCode = buffer.String()
 	return
 }
